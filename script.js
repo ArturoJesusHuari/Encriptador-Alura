@@ -51,6 +51,9 @@ function crearButtonCopiar(){
 function validarTexto(text){
     var resultado = true;
     //alert(text.charCodeAt(0));
+    if(text.length==0){
+        return false
+    }
     for(var i=0; i<text.length; i++){
         if(text.charCodeAt(i)>=97 && text.charCodeAt(i)<=122 || text.charCodeAt(i)==241){
             resultado &&= true;
