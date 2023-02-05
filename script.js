@@ -60,3 +60,23 @@ function validarTexto(text){
     }
     return resultado;
 }
+function cambiarTema(){
+    if(document.querySelector("body").style.background!="black"){
+        document.querySelector("body").style.background = "black";
+        document.querySelector(".formulario textarea").style.background = "black";
+        document.querySelector(".formulario textarea").style.color = "white";
+        document.querySelector(".advertencia").style.color = "white";
+        document.getElementById("theme").innerHTML = '<img src="imagenes/Tema-claro.png">';
+        document.querySelector(".botonCambiarTema").style.background = "black";
+        document.querySelector(".out").style.background = "#494747";
+    }else{
+        document.querySelector("body").style.background = "white";
+        document.querySelector(".formulario textarea").style.background = "white"
+        document.querySelector(".formulario textarea").style.color = "black";
+        document.querySelector(".advertencia").style.color = "black";
+        document.getElementById("theme").innerHTML = '<img src="imagenes/Tema.png">';
+        document.querySelector(".botonCambiarTema").style.background = "white";
+        document.querySelector(".out").style.background = '#B7B3B3';
+    }
+    
+}

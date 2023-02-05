@@ -11,6 +11,7 @@
         <header>
             <div class="logo">
                 <img src="imagenes/VectorAlura.png">
+                <button id="theme" class="botonCambiarTema" value="tema" onclick="cambiarTema();"><img src="imagenes/Tema.png"></button>
             </div>
         </header>
         <main>
@@ -20,7 +21,7 @@
                     <textarea cols="30" rows="7" id="texto" required></textarea>
                 </form>
                 <div class="funciones">
-                    <label>Solo letras minusculas y sin acento</label>
+                    <label class="advertencia">Solo letras minusculas y sin acento</label>
                     <div>
                         <button class="botonEncriptar" value="encriptar" onclick="encriptar();">Encriptar</button>
                         <button class="botonDesencriptar"value="desencriptar" onclick="desencriptar();">Desencriptar</button>
